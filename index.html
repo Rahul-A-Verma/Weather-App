@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wheather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <input class="search" type="text" placeholder="Enter City" value="" />
+        <button class="btn">
+          <i class="img fa-solid fa-magnifying-glass"></i>
+        </button>
+        <!-- <p class="error">Invalid City</p> -->
+      </div>
+      <div class="weather">
+        <img class="image" src="/img/clouds.png" alt="" />
+        <p class="date">Mon Jan 1 2024</p>
+        <div class="temp_box">
+            <h1 class="temp">22°C </h1><p class="description">cloudy</p>
+        </div>
+        <h1 class="cityName">Mumbai</h1>
+        <div class="bottom">
+          <div class="bottom_1">
+            <img class="bottomImg" src="/img/humidity.png"alt="" />
+            <div class="text">
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="bottom_2">
+            <img class="bottomImg" src="/img/wind.png"alt="" />
+            <div class="text">
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1 class="errorMessage"></h1>
+
+    <script src="index.js"></script>
+  </body>
+</html>

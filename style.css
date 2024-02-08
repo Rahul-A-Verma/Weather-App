@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #212121;
+  color: white;
+}
+.card {
+  background-color: #4b4b4b;
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto 0;
+  text-align: center;
+  border-radius: 10px;
+}
+.search {
+  font-size: 18px;
+  padding: 10px 25px;
+  margin: 20px 0;
+  border-radius: 20px;
+  border: none;
+  outline: 0;
+  opacity: 0.9;
+}
+.btn {
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+}
+.btn,img{
+font-size: 18px;
+}
+
+.image {
+  width: 35%;
+}
+.temp_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.description{
+  margin-top: 10px;
+}
+.bottomImg {
+  width: 25%;
+}
+.bottom {
+  margin-top: 25px;
+  display: flex;
+  padding: 25px 15px;
+   gap: 90px;
+}
+.bottom_1,
+.bottom_2 {
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.text{
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 15px;
+}
+.weather{
+  display: none;
+}
+.error{
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px;
+  padding: 0 0 20px 20px;
+  display: none;
+}
+.errorMessage{
+  color: #4b4b4b;
+  text-align: center;
+  margin-block: 20px;
+  display: none;
+}
+
+
