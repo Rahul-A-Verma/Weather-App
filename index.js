@@ -33,7 +33,7 @@ function wheatherApi(city) {
     // console.log(raw.status)
     return raw.json();
   }).then(function(data){
-    // console.log(data);
+    console.log(data);
     temperatur.innerHTML=`${Math.round(data.main.temp)+"°C"}`
     humidity.innerHTML=`${data.main.humidity +"%"}`
     wind.innerHTML=`${Math.round(data.wind.speed)+" km/h"}`
@@ -84,6 +84,33 @@ button.addEventListener('click',function(){
         
     }
 })
+
+
+userInput.addEventListener("keydown", function(event){
+    if(event.keyCode === 13){
+        let city = userInput.value
+        console.log(city)
+        if(city!==""){
+        displayMsg("Please Wait...")
+        wheatherApi(city)
+        userInput.value=''
+        errorMessage.style.display="block"
+        weather.style.display="none"
+        }
+        else{
+            displayMsg("Enter City name for weather information")
+            errorMessage.style.display="block"
+            weather.style.display="none"
+            
+            
+        }
+        console.log("enter")
+    }
+   
+})
+
+
+
 function displayMsg(msg){
     errorMessage.innerHTML=`${msg}`
 }

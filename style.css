@@ -37,9 +37,14 @@ body {
 .btn,img{
 font-size: 18px;
 }
-
+.date{
+  color: #f6cb43;
+}
 .image {
-  width: 35%;
+  width: 40%;
+}
+.cityName{
+  font-size: 40px
 }
 .temp_box{
   display: flex;
@@ -49,6 +54,7 @@ font-size: 18px;
   margin-top: 10px;
 }
 .description{
+  color: #f6cb43;
   margin-top: 10px;
 }
 .bottomImg {
@@ -58,7 +64,7 @@ font-size: 18px;
   margin-top: 25px;
   display: flex;
   padding: 25px 15px;
-   gap: 90px;
+   gap: 70px;
 }
 .bottom_1,
 .bottom_2 {
