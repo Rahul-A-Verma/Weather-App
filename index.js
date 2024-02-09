@@ -33,7 +33,7 @@ function wheatherApi(city) {
     // console.log(raw.status)
     return raw.json();
   }).then(function(data){
-    console.log(data);
+    // console.log(data);
     temperatur.innerHTML=`${Math.round(data.main.temp)+"°C"}`
     humidity.innerHTML=`${data.main.humidity +"%"}`
     wind.innerHTML=`${Math.round(data.wind.speed)+" km/h"}`
@@ -104,7 +104,7 @@ userInput.addEventListener("keydown", function(event){
             
             
         }
-        console.log("enter")
+        // console.log("enter")
     }
    
 })
